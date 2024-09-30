@@ -31,10 +31,16 @@ _start:
 ```
 
 Montando o objeto binário:
+```
 nasm -f elf32 hello.asm -o hello.o
+```
 
 Linkando o objeto ao executável:
+```
 gcc -m32 -o hello hello.o -nostartfiles
+```
 
 E após isso, executar o arquivo ./hello
+```
 ./hello
+```
